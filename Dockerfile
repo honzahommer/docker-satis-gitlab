@@ -3,7 +3,7 @@ FROM ubuntu:latest
 ENV DEBIAN_FRONTEND noninteractive 
 
 RUN apt-get -y update && \
-    apt-get -y install composer curl git php7.2 php7.2-dom php7.2-mbstring php7.2-zip && \
+    apt-get -y install composer curl git gitlab-cli jq php7.2 php7.2-dom php7.2-mbstring php7.2-zip && \
     apt-get -y autoremove && \
     rm -rf var/lib/apt/lists/*
 
